@@ -19,8 +19,20 @@ cd eventbrite-auto-register
 
 2. Install dependencies:
 ```bash
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt --break-system-packages
 ```
+
+# Or really use a virtual env
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate
+
+# Now install dependencies
+pip3 install -r requirements.txt
+
+# Run the script
+python3 eventbrite_auto.py
 
 3. Install ChromeDriver:
 ```bash
@@ -75,3 +87,11 @@ Make sure you're on the **checkout page** (not the ticket selection page) before
 ## Legal
 
 This script is for personal use only. Ensure you comply with Eventbrite's Terms of Service.
+
+
+# Issues
+1: kept trying to open new chrome page from start. failed to set up correctly
+
+# Solutions
+1: let's try a browser extension approach 
+java skript bookmark 
